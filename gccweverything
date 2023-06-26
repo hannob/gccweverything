@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo -e -Wall -Wextra $(gcc -Wall -Wextra -Q --help=warning | grep '\[disabled\]' | sed -e 's:^ *::g' -e 's: .*::g')
